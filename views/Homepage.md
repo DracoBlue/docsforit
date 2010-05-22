@@ -21,7 +21,7 @@ others.
 
 ### Under the hood
 
-The source for DocsForIt! my be found [docsforit github page]
+The source for DocsForIt! may be found at the [docsforit github page]
 [docsforit-github] and is released for the public domain.
 
   [docsforit-github]: http://github.com/DracoBlue/docsforit
