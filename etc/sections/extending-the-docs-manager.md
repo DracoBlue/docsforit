@@ -71,14 +71,12 @@ In the end the `lib/DocsManager.js` looks like this:
                 if (error) {
                     cb('');
                 } else {
-                    var raw_html_content = self.markdown_converter.makeHtml(content.toString());
-                    
                     var attributes = {
                         "text-editor": "vim",
                         "base-url": "http://localhost:8000/"
                     };
                     
-                    html_content = raw_html_content.replace(/{{{([\w\d\-]+)}}}/g, function(match, attribute_key) {
+                    var expanded_content = content.toString().replace(/{{{([\w\d\-]+)}}}/g, function(match, attribute_key) {
                         if (typeof attributes[attribute_key] === 'undefined') {
                             return '{{{' + attribute_key + '}}}';
                         } else {
@@ -86,7 +84,7 @@ In the end the `lib/DocsManager.js` looks like this:
                         }
                     });
                     
-                    cb(html_content);
+                    cb(self.markdown_converter.makeHtml(expanded_content));
                 }
             });
         };
