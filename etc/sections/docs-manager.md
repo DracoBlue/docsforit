@@ -67,6 +67,6 @@ Now we may run the app again
 
     $ node run_server.js
 
-and are able to see <http://localhost:8000/> and <http://localhost:8000/docs/>
+and are able to see <{{{base-url}}}> and <{{{base-url}}}docs/>
 which shows just a h2 with the contents `"DocsForIt"`. This is exactly this,
 what we registered in the new docs-controllers file.

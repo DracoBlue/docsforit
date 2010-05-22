@@ -85,7 +85,7 @@ the following:
     });
 
 This creates a nice `<ul>` with all sections. Of course you could open just the
-sections navigation now, by opening <http://localhost:8000/docs._sections/>
+sections navigation now, by opening <{{{base-url}}}docs._sections/>
 but we want to use it in the site.
 
 ### Using a slot
@@ -104,5 +104,5 @@ the following:
         <% slot("docs._sections/") %>
     </div>
     
-If you navigate back to <http://localhost:8000/docs/extending-the-docs-manager/>
+If you navigate back to <{{{base-url}}}docs/extending-the-docs-manager/>
 again, you'll see the nice sections navigation right in our website!

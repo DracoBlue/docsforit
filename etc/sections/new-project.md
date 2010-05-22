@@ -60,7 +60,7 @@ Now launch the application with:
 
     $ node run_server.js
 
-and watch the app with your browser at <http://localhost:8000>. You should see:
+and watch the app with your browser at <{{{base-url}}}>. You should see:
 
     Welcome to DocsForIt!
 

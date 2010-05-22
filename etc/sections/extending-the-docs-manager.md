@@ -18,7 +18,9 @@ Additionally we add a small file called
 
 with the following content:
 
-    ## The etc/sections folder
+    ## Extending the DocsManager
+
+    ### The etc/sections folder
     
     The idea is now, to create a folder with all sections of our documentation
     and put it in an extra folder.
@@ -27,7 +29,7 @@ with the following content:
     
         $ mkdir etc/sections
     
-    ## The first section
+    ### The first section
     
     Additionally we add a small file called
     `etc/sections/extending-the-docs-manager.md` into that folder
@@ -72,7 +74,8 @@ In the end the `lib/DocsManager.js` looks like this:
                     var raw_html_content = self.markdown_converter.makeHtml(content.toString());
                     
                     var attributes = {
-                        "text-editor": "vim"
+                        "text-editor": "vim",
+                        "base-url": "http://localhost:8000/"
                     };
                     
                     html_content = raw_html_content.replace(/{{{([\w\d\-]+)}}}/g, function(match, attribute_key) {
@@ -123,6 +126,6 @@ and append this:
     });
 
 If we relaunch the application now and open
-<http://localhost:8000/docs/extending-the-docs-manager/> in the browser we see
+<{{{base-url}}}docs/extending-the-docs-manager/> in the browser we see
 the documentation of the documentation of the documentation in the browser!
 Recursion wins! ;)
