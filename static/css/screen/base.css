@@ -39,6 +39,24 @@ a {
     background-image: url(../../images/bg_content.png);
 }
 
+#page_main ul,
+#page_main ol {
+    margin-left: 20px;
+}
+
+#page_main ul li,
+#page_main ol li {
+	margin-left: 10px;
+}
+
+#page_main ul {
+	list-style-type: circle;
+}
+
+#page_main ol {
+    list-style-type: decimal;
+}
+
 #page_navigation {
     width: 170px;
     float: left;
