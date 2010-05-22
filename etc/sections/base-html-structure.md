@@ -132,6 +132,11 @@ minutes, I created a small `.zip` file with everything needed.
 
 Take all files in that .zip and extract them into your static folder.
 
+It's a pitty, but since the tutorial is not yet finished, you may not find
+a finished .zip somewhere. Please get the latest files by downloading all files
+from the <http://github.com/DracoBlue/docsforit/tree/master/static/> folder
+at github.
+
 Your `docsforit/static` folder should look like this now:
 
     static/
