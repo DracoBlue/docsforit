@@ -1,0 +1,127 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../../images/bg_page.png);
+	color: #ffffff;
+	background-color: #2B488E;
+	background-repeat: repeat-x;
+	overflow-y: scroll;
+}
+
+a {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#page_margins {
+	width: 1024px;
+	margin: 40px auto 0;
+}
+
+#page_header {
+	width: 170px;
+	float: left;
+	padding-top: 40px;
+}
+
+#page_header h1 a {
+	font-size: 2.3em;
+    font-weight: 400;
+}
+
+#page_main {
+    width: 800px;
+    float: right;
+	border-left: 10px solid #fff;
+    border-right: 10px solid #fff;
+	min-height: 440px;
+	padding: 60px 10px 10px;
+    background-image: url(../../images/bg_content.png);
+}
+
+#page_navigation {
+    width: 170px;
+    float: left;
+    clear: left;
+    padding-top: 10px;
+	font-size: 0.8em;
+	text-align:right;
+}
+
+#page_navigation h2 {
+	margin-left: 20px;
+	border-bottom: 1px solid #FFFFFF;
+	margin-bottom: 10px;
+}
+#page_footer {
+	padding: 1.5em;
+	font-size: 0.8em;
+	clear: both;
+	text-align: center;
+	color: #dddddd;
+}
+
+#page_footer a {
+    color: #dddddd;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+ * Headlines
+ */
+
+h2 {
+    font-size: 144.5%;
+    padding: 0.5em 0;
+}    
+
+h3 {
+    font-size: 122.83%;
+    padding: 0.5em 0;
+}
+
+h4 {
+    font-size: 110.54%;
+    padding: 0.5em 0;
+}
+
+h5 {
+    font-size: 93.96%;
+    padding: 0.5em 0;
+}
+
+h6 {
+    font-size: 80%;
+    padding: 0.5em 0;
+}
+
+h2 a, h3 a, h4 a, h5 a, h6 a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+p {
+    padding: 10px 0;
+}
+
+pre {
+    padding: 5px 0;
+}
+
+code {
+    background-color: #1B346F;
+}
+
+pre code {
+    padding: 5px 10px;
+    display: block;
+    line-height: 1.2em;
+}
