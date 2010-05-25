@@ -18,6 +18,10 @@ others.
   [extending-the-docs-manager]: docs/extending-the-docs-manager/
 6. [Sections Navigation] [sections-navigation] 
   [sections-navigation]: docs/sections-navigation/
+7. [Sorting the Sections] [sorting-the-sections] 
+  [sorting-the-sections]: docs/sorting-the-sections/
+8. [Configuration] [configuration] 
+  [configuration]: docs/configuration/
 
 ### Under the hood
 
