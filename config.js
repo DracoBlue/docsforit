@@ -1,5 +1,15 @@
 config.setValues({
     "combine_css": {
-        "base_url": "http://localhost/"
+        "base_url": "http://localhost:8000/"
     }
 });
+
+config.setValues({
+    "logging": {
+        "level": 7,
+        "hide_classes": [
+            "CombineCss"
+        ]
+    }
+});
+
