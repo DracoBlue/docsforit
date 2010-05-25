@@ -27,7 +27,7 @@ and append at bottom:
                     
                     var raw_section_files = content.split("\n");
                     var raw_section_files_length = raw_section_files.length;
-                    for (var i=0; i<raw_section_files_length; i++) {
+                    for (var i = 0; i < raw_section_files_length; i++) {
                         var section_key = raw_section_files[i];
                         if (section_key !== "") {
                             section_key = section_key.substr(0, section_key.length - 3);
@@ -106,3 +106,4 @@ the following:
     
 If you navigate back to <{{{base-url}}}docs/extending-the-docs-manager/>
 again, you'll see the nice sections navigation right in our website!
+

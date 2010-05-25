@@ -36,7 +36,7 @@ with the following contents:
         if (context.javascripts) {
             var javascripts = context.javascripts;
             var javascripts_length = javascripts.length;
-            for (var i=0; i < javascripts_length; i++) {
+            for (var i = 0; i < javascripts_length; i++) {
      %>
             <script type="text/javascript" src="<%= javascripts[i] %>"> </script>
     <% 
