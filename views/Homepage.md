@@ -22,6 +22,8 @@ others.
   [sorting-the-sections]: docs/sorting-the-sections/
 8. [Configuration] [configuration] 
   [configuration]: docs/configuration/
+9. [Editing the Sections] [editing-the-sections] 
+  [editing-the-sections]: docs/editing-the-sections/
 
 ### Under the hood
 
