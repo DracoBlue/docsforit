@@ -86,10 +86,16 @@ a {
 
 
 
+.form-buttons input {
+    padding: 0.5em;
+    font-variant: small-caps;
+	margin-right: 0.5em;
+	font-weight: 700;
+}
 
-
-
-
+.form-buttons {
+    padding: 0.5em;
+}
 
 
 /*
@@ -110,7 +116,7 @@ h4 {
     font-size: 110.54%;
     padding: 0.5em 0;
 }
-
+We have been using the configuration and environment system of the frameworkssss
 h5 {
     font-size: 93.96%;
     padding: 0.5em 0;
@@ -143,4 +149,14 @@ pre code {
     display: block;
     line-height: 1.2em;
 	font-size: 0.8em;
+}
+
+
+textarea.code {
+	line-height: 1.3em;
+	font-family: "Courier New", Courier, monospace;
+	overflow-y: scroll;
+	overflow-x: auto;
+	background-color: #ffffff;
+	color: #000000;
 }
