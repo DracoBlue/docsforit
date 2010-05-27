@@ -1,5 +1,5 @@
 require("./../core");
 
 new ServerApplication( {
-    "port": 8090
+    "port": 8000
 }).run();
