@@ -2,7 +2,7 @@
 
 ### Install Markdown view support
 
-  [markdown-views-plugin]:
+  [markdown-views-plugin]: http://github.com/DracoBlue/spludo-plugins/tree/master/markdown-views/
   [plugin-repository]: http://spludo.com/plugins/
   [md-documentation]: http://en.wikipedia.org/wiki/Markdown
 
