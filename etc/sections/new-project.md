@@ -31,10 +31,7 @@ We need a dispatcher for the webserver
 looking like that:
 
     require("./../core");
-    
-    new ServerApplication( {
-        "port": 8000
-    }).run();
+    new ServerApplication().run();
 
 
 ### Welcome to DocsForIt!
