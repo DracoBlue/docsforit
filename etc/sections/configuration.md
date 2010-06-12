@@ -25,14 +25,7 @@ before, you will overwrite the value.
 If you know that somebody may do combine_css settings before, and you want
 to set **only** the `base_url`, this is how you can do that:
 
-    var combine_css_config = config.get('combine_css', {});
-    combine_css_config.base_url = "{{{base-url}}}";
-    config.setValues({
-        "combine_css": combine_css_config
-    });
-
-This looks not as handy as before, but you won't run into this issue that
-often.
+    config.setPathValue(["combine_css", "base_url"], "{{{base-url}}}");
 
 ### Debug-Level
 
