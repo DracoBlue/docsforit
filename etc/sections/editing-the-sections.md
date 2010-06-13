@@ -2,11 +2,11 @@
 
 ### The JsBehaviour Plugin
 
-The js-behaviour plugin is intended to inject (with progressive enhancement)
+The js-behaviour plugin is intended to inject (with progressive enrichment)
 javascript functionality into a html website.
 
 The basic idea is to use a special html class for dom objects to identify
-those elements, which should be enhanced by javascript. As soon as the html
+those elements, which should be enriched by javascript. As soon as the html
 is loaded, the javascript collects those elements and applys the javascript
 behaviour to the plain html objects.
 
