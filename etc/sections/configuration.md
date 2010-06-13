@@ -72,23 +72,21 @@ Now open the `lib/DocsManager.js`
 
 and replace:
 
-    return function(cb) {
-        fs.readFile(__dirname + '/../etc/sections/' + section_name + '.md', function(error, content) {
+    DocsManager.prototype.getSectionAsHtml = function(section_name) {
+        var self = this;
+        return function(cb) {
 
 with:
 
-    return function(cb) {
-        self.trace("getSectionAsHtml", section_name);
-        fs.readFile(__dirname + '/../etc/sections/' + section_name + '.md', function(error, content) {
+    DocsManager.prototype.getSectionAsHtml = function(section_name) {
+        this.trace("getSectionAsHtml", arguments);
+        var self = this;
+        return function(cb) {
 
 Relaunching the app and opening {{{base-url}}}docs/extending-the-docs-manager/ will output:
 
-    DEBUG: TRACE [DocsManager] : { '0': 'getSectionAsHtml'
-        , '1': 'extending-the-docs-manager'
-    }
+    TRACE [DocsManager.getSectionAsHtml] { '0': 'extending-the-docs-manager' }
 
 If we want to stop the DocsManager from telling us what it does in detail, we
 could lower the logging level to something below 6 (TRACE) or add
 `"DocsManager"` to the filter at logging hide_classes property.
-
-
