@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "login": "admin",
+        "password": "1234",
+        "properties": {
+            "first_name": "Alice"
+        }
+    }
+]
