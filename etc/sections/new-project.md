@@ -2,37 +2,53 @@
 
 ### Creating the app directory
 
-Head right into your spludo directory.
+Create a new folder as spludo workspace. For instance:
 
-    $ cd spludo
-    
-Create a new folder called `docsforit`. This will be our application folder.
+    $ mkdir spludo-workspace
+    $ cd spludo-workspace
 
-    $ mkdir docsforit
-    
-Let's create a basic folder structure:
+Download spludo into that directory.
 
-    $ mkdir docsforit/lib
-    $ mkdir docsforit/controllers
-    $ mkdir docsforit/views
-    $ mkdir docsforit/plugins
-    $ mkdir docsforit/static
+The folder should look like this now:
+
+    spludo-workspace/
+        spludo/
+            core/ - core classes
+            build/ - necessary for build
+            spludotests/ - the test application for spludo
+            splud-gen - the generator application
+
+Execute:
+
+    $ spludo/spludo-gen new-project
+
+Response should be something like this:
+  
+     Spludo-Generator - http://spludo.com/
+      
+       Template: new-project
     
+    Name of the Project (e.g. myapp): docsforit
+    Spludo Directory [/home/spludo/spludo/spludo/]: 
+      
+       Working ... 
+    
+    Directory created: /home/jan/spludo-workspace/docsforit/
+    Created file: /home/jan/spludo-workspace/docsforit/run_console.js
+    Created file: /home/jan/spludo-workspace/docsforit/run_server.js
+    Created folder: /home/jan/spludo-workspace/docsforit/controllers
+    Created file: /home/jan/spludo-workspace/docsforit/config.js
+    Created folder: /home/jan/spludo-workspace/docsforit/static
+    Created folder: /home/jan/spludo-workspace/docsforit/lib
+    Created file: /home/jan/spludo-workspace/docsforit/lib/index.js
+    Created file: /home/jan/spludo-workspace/docsforit/build.xml
+    Created folder: /home/jan/spludo-workspace/docsforit/views
+      
+       Finished!    
+       
 Enter the folder
 
     $ cd docsforit
-
-### Create the dispatcher
-
-We need a dispatcher for the webserver
-
-    $ {{{text-editor}}} run_server.js
-
-looking like that:
-
-    require("./../core");
-    new ServerApplication().run();
-
 
 ### Welcome to DocsForIt!
 
