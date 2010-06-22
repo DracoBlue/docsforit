@@ -21,6 +21,8 @@ Now you should have a `plugins` folder which looks like this:
 
 ### Homepage with markdown
 
+Remove the generated `views/Homepage.ejs`.
+
 Now we need to use the markdown views. Create a new file called
 `views/Homepage.md`:
 
@@ -48,23 +50,6 @@ with this contents:
      [spludo-framework]: http://spludo.com
                          (A powerful webframework for node.JS)
 
-Update your main-controllers
-
-    $ {{{text-editor}}} controllers/main-controllers.js
-
-for something like this:
-
-    new Controller("", {
-        "execute": function(params, context) {
-            var self = this;
-            return function(cb) {
-                context.layout_name = 'HtmlLayout';
-                context.view_name = 'Homepage';
-                cb();
-            };
-        }
-    });
-    
 Running the app again with:
 
     $ node run_server.js
