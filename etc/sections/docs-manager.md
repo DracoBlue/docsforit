@@ -49,7 +49,7 @@ Since we'll do lots of stuff with the docs manager now, we will create an own
 
 Create the file:
 
-    $ {{{text-editor}}} controllers/docs-controllers
+    $ {{{text-editor}}} controllers/docs-controllers.js
 
 And store it with this example content:
 
