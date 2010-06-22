@@ -28,22 +28,30 @@ Response should be something like this:
       
        Template: new-project
     
-    Name of the Project (e.g. myapp): docsforit
-    Spludo Directory [/home/spludo/spludo/spludo/]: 
+    Name of the Project Folder (e.g. myapp): docsforit
+    Title of the Project (e.g. My Super App): Docsforit
+    Spludo Directory [/home/jan/spludo-workspace/spludo/]: 
       
        Working ... 
-    
+
     Directory created: /home/jan/spludo-workspace/docsforit/
     Created file: /home/jan/spludo-workspace/docsforit/run_console.js
     Created file: /home/jan/spludo-workspace/docsforit/run_server.js
     Created folder: /home/jan/spludo-workspace/docsforit/controllers
+    Created file: /home/jan/spludo-workspace/docsforit/controllers/main-controllers.js
     Created file: /home/jan/spludo-workspace/docsforit/config.js
     Created folder: /home/jan/spludo-workspace/docsforit/static
+    Created folder: /home/jan/spludo-workspace/docsforit/static/images
+    Created (binary) file: /home/jan/spludo-workspace/docsforit/static/images/spludo_template_bg.png
+    Created folder: /home/jan/spludo-workspace/docsforit/static/css
+    Created file: /home/jan/spludo-workspace/docsforit/static/css/screen.css
     Created folder: /home/jan/spludo-workspace/docsforit/lib
     Created file: /home/jan/spludo-workspace/docsforit/lib/index.js
     Created file: /home/jan/spludo-workspace/docsforit/build.xml
     Created folder: /home/jan/spludo-workspace/docsforit/views
-      
+    Created file: /home/jan/spludo-workspace/docsforit/views/HtmlLayout.ejs
+    Created file: /home/jan/spludo-workspace/docsforit/views/Homepage.ejs
+
        Finished!    
        
 Enter the folder
@@ -52,30 +60,11 @@ Enter the folder
 
 ### Welcome to DocsForIt!
 
-We'll create now a happy welcome page for the users of our application.
-
-Let's make some basic controllers for the main purposes of our application:
-
-    $ {{{text-editor}}} controllers/main-controllers.js
-    
-and fill it with the contents:
-
-    new Controller("", {
-        "execute": function(params, context) {
-            var self = this;
-            return function(cb) {
-                cb('Welcome to DocsForIt!');
-            };
-        }
-    });
-    
 Now launch the application with:
 
     $ node run_server.js
 
-and watch the app with your browser at <{{{base-url}}}>. You should see:
-
-    Welcome to DocsForIt!
+and watch the app with your browser at <{{{base-url}}}>. You should see the project skeleton app.
 
 Awesome ;).
 

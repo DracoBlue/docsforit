@@ -1,85 +1,12 @@
-## The HtmlLayout
-
-The page we just created looks not that good. There is all the cool html stuff
-missing. So we will create a basic HtmlLayout now, which will be used within 
-the entire project.
-
-Create the `views/HtmlLayout.ejs`
-
-    $ {{{text-editor}}} views/HtmlLayout.ejs
-
-with the following contents:
-
-    <%
-    
-        context.headers = context.headers || {};
-        context.headers["Content-Type"] = "text/html; charset=UTF-8";
-        
-        var base_url = "http://" + context.request_headers["host"] + "/";
-    
-        var application_title = "DocsForIt!";
-        
-    %><?xml version="1.0" encoding="UTF-8"?>
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-    <html
-        xmlns="http://www.w3.org/1999/xhtml"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xml:lang="en">
-    <head>
-        <title><%= StringToolkit.encodeXml(application_title) %></title>
-    
-        <base href="<%= base_url %>" />
-    
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    
-    <%  
-        if (context.javascripts) {
-            var javascripts = context.javascripts;
-            var javascripts_length = javascripts.length;
-            for (var i = 0; i < javascripts_length; i++) {
-     %>
-            <script type="text/javascript" src="<%= javascripts[i] %>"> </script>
-    <% 
-     
-            }
-        }
-    %>
-        </head>
-        <body id="body">
-            <div id="page_margins">
-                <div id="page_header">
-                    <h1><a href="<%= base_url %>"><%= StringToolkit.encodeXml(application_title) %></a></h1>
-                </div>
-                <div id="page_main">
-                    <%= inner %>
-                </div> <!-- /#main -->
-                
-                <div id="page_footer">
-                    © 2010 by You | Powered by <a href="http://spludo.com">Spludo</a>
-                </div> <!-- /#page_footer -->
-            </div> <!-- /#page_margins -->
-        </body>
-    </html>
-
-## Using the HtmlLayout for the Frontpage
-
-Update your main-controllers
-
-    $ {{{text-editor}}} controllers/main-controllers.js
-
-for something like this:
-
-    new Controller("", {
-        "execute": function(params, context) {
-            var self = this;
-            return function(cb) {
-                context.layout_name = 'HtmlLayout';
-                cb('Welcome to DocsForIt!');
-            };
-        }
-    });
-    
 ## Adding CSS
+
+The example app we just created looks not that good. That's why we want to
+create our own css-style and stuff now.
+
+Remove `static/images/spludo_template.png` and `static/css/screen.css`. Also
+remove from `views/HtmlLayout.ejs` the line:
+
+    <link rel="stylesheet" type="text/css" href="static/css/screen.css" />
 
 ### Adding CombineCss
 Download the [combine-css] plugin and unpack it to `docsforit/plugins`.
