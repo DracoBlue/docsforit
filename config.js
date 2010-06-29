@@ -10,6 +10,12 @@ config.setValues({
         "hide_classes": [
             "CombineCss"
         ]
+    },
+    "auth": {
+        "user_manager_engine": "JsonFileUserManager",
+        "user_manager_engine_options": {
+            "file_name": __dirname + '/etc/users.json'
+        }
     }
 });
 
