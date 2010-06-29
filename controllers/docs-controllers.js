@@ -107,6 +107,11 @@ new Controller("docs.api.storeSection", {
             var section_name = context.params.section;
             var content = context.params.content;
             
+            if (!context.session) {
+                cb(JSON.stringify(false));
+                return ;
+            }
+            
             docs_manager.storeSectionContent(section_name, content)(function(error) {
                 cb(JSON.stringify(error ? false : true));
             });
