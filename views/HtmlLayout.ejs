@@ -48,6 +48,19 @@
                 <%= inner %>
             </div> <!-- /#main -->
             <div id="page_navigation">
+<%
+    if (context.session) {
+%>
+                <h2>Welcome</h2>
+                <p>Hello <%= context.session.user_name %>. <a href="/logout">Logout</a>?</p>
+<%        
+    } else {
+%>
+                <h2>Welcome</h2>
+                <p>Please <a href="/login">login</a></p>
+<%
+    }
+%>            
                 <h2>Sections</h2>
                 <% slot("docs._sections/") %>
             </div>

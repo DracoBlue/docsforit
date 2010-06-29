@@ -24,6 +24,8 @@ others.
   [configuration]: docs/configuration/
 9. [Editing the Sections] [editing-the-sections] 
   [editing-the-sections]: docs/editing-the-sections/
+10. [Authentication] [authentication] 
+  [authentication]: docs/authentication/
 
 ### Under the hood
 
