@@ -1,3 +1,15 @@
+/*
+ * JsBehaviourToolkit 1.0
+ *
+ * Released on 6th July 2010.
+ *
+ * This file is part of JsBehaviour.
+ * Copyright (c) 2010 DracoBlue, http://dracoblue.net/
+ *
+ * Licensed under the terms of MIT License. For the full copyright and license
+ * information, please see the LICENSE file in the root folder.
+ */
+
 exports.createElementXml = function(options) {
     if (typeof options.tag === 'undefined') {
         throw new Error('The option .tag is not set!');
